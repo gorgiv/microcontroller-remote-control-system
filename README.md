@@ -84,7 +84,7 @@ To adjust the voltage level of the microcontroller ports for serial communicatio
 - Check the current measured temperature in the home
 - When a user is present at home, he can monitor the current temperature in the room through the display
 - Allowed control by an unlimited number of users from any place in the world with a GSM network available
-- Only one user can be a system administrator
+- Only one person can be a system administrator
 
 ## 8. Working principle of the system
 
@@ -92,6 +92,10 @@ To adjust the voltage level of the microcontroller ports for serial communicatio
 - The microcontroller constantly checks if the mobile phone has received an SMS message
 - The microcontroller will read the new message, delete it from the phone's memory and execute the appropriate command
 - Then, the microcontroller in the mobile phone of the system will write an SMS message with a response for the executed command and send it back to the user
-- The microcontroller will also send an SMS message to the administrator to inform him about which user has given what order
+- The microcontroller will also send an SMS message to the administrator to inform him about the phone number of the user who gave the command and its content as well
 
 ![PrincipleScheme](/assets/images/PrincipleScheme.jpg "PrincipleScheme")
+
+## 9. Schematic diagram of the system
+
+![SchematicDiagram](/assets/images/SchematicDiagram.jpg "SchematicDiagram")
