@@ -94,4 +94,4 @@ To adjust the voltage level of the microcontroller ports for serial communicatio
 - Then, the microcontroller in the mobile phone of the system will write an SMS message with a response for the executed command and send it back to the user
 - The microcontroller will also send an SMS message to the administrator to inform him about which user has given what order
 
-![PrincipleScheme](/assets/images/PrincipleScheme.png "PrincipleScheme")
+![PrincipleScheme](/assets/images/PrincipleScheme.jpg "PrincipleScheme")
