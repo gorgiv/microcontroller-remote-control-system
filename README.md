@@ -40,11 +40,13 @@ The aim of this project is to:
 | Program Memory (Bytes)    | 128K |
 | Data Memory (Bytes)       | 3.936 |
 | Data EEPROM Memory (Bytes) | 1.024 |
-| I/O Port PINs | 70 |
+| I/O Pins | 70 |
 | 10-bit Analog-to-Digital Module | 16 Input Channels |
 | Timers | 5 |
 | Capture/Compare/PWM Modules | 2 |
 | Operating Voltage       | 2.0 – 5.5 VDC |
+
+![Microcontroller PIC18F8722](/assets/images/medium-PIC18F8722-TQFP-80.png "Microcontroller PIC18F8722")
 
 ## 3. Mobile Phone Sony Ericsson T230
 
