@@ -13,7 +13,7 @@ The aim of this project is to:
     - mobile phone
 - Develop a programming code for the microcontroller
 - Implement AT commands in the code
-- Apply serial communication between the mobile phone and microcontroller
+- Establish serial communication between the mobile phone and microcontroller
 - Use the proper type of sensors for household conditions monitoring 
 
 ## 1. System components
@@ -49,7 +49,7 @@ The aim of this project is to:
 - Allows connection to the microcontroller via a serial communication cable
 - It supports the exchange of information using AT commands
     - mode of operation in text format, as opposed to PDU format
-- Its main purpose is exchange of information over long distances via SMS messages
+- Its main purpose is information exchange over long distances via SMS messages
     - allows devices to be controlled remotely
 
 ## 4. MAX232 for voltage level adjustment of the microcontroller
