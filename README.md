@@ -1,6 +1,6 @@
-# Microcontroller based remote-control system 
+# Microcontroller-based remote control system 
 
-Design and construction of a microcontroller based remote-control system for home appliances with real-time monitoring using mobile phones
+Design and construction of a microcontroller-based remote control system for home appliances with real-time monitoring using mobile phones
 
 ![PrincipleScheme](/assets/images/PrincipleScheme.jpg "PrincipleScheme")
 
