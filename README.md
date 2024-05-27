@@ -29,7 +29,7 @@ The aim of this project is to:
 
 ## 2. Specifications of Microcontroller PIC18F8722
 
-| Specifications            |   PIC18F8722 |
+| **Specifications**            |   **PIC18F8722** |
 | :---                      |        ---: |
 | Operating Frequency       | DC – 40 MHz |
 | Program Memory (Bytes)    | 128K |
@@ -86,6 +86,7 @@ To adjust the voltage level of the microcontroller ports for serial communicatio
 - Check the current measured temperature in the home
 - When a user is present at home, he can monitor the current temperature in the room through the display
 - Allowed control by an unlimited number of users from any place in the world with a GSM network available
+- Suitable for places without internet connection
 - Only one person can be a system administrator
 
 ## 8. Working principle of the system

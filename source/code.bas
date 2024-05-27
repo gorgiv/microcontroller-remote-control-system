@@ -1,11 +1,11 @@
 '****************************************************************
-'*  Name    : code.BAS                                      *
+'*  Name    : code.BAS                                          *
 '*  Author  : Gjorgji Velkovski                                 *
 '*  Notice  : Copyright (c) 2014 SMSkontroler                   *
 '*          : All Rights Reserved                               *
 '*  Date    : 24.12.2014                                        *
 '*  Version : 1.0                                               *
-'*  Notes   : nefizicki                                         *
+'*  Notes   :                                                   *
 '*          :                                                   *
 '****************************************************************
 
