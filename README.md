@@ -14,7 +14,7 @@ The aim of this project is to:
 - Develop a programming code for the microcontroller
 - Implement AT commands in the code
 - Establish serial communication between the mobile phone and microcontroller
-- Utilize proper type of sensors for household conditions monitoring 
+- Utilize proper type of sensors for home conditions monitoring 
 
 ## 1. System components
 
