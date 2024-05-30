@@ -41,7 +41,7 @@ The aim of this project is to:
 | Capture/Compare/PWM Modules | 2 |
 | Operating Voltage       | 2.0 – 5.5 VDC |
 
-![Microcontroller PIC18F8722](/assets/images/medium-PIC18F8722-TQFP-80.png "Microcontroller PIC18F8722")
+![MicrocontrollerPIC18F8722](/assets/images/MicrocontrollerPIC18F8722.png "MicrocontrollerPIC18F8722")
 
 ## 3. Mobile phone Sony Ericsson T230
 
@@ -54,13 +54,13 @@ The aim of this project is to:
 
 ## 4. MAX232 for voltage level adjustment of the microcontroller
 
-![MAX232](/assets/images/MAX232.jpg "MAX232")
+![AdapterMAX232](/assets/images/AdapterMAX232.jpg "AdapterMAX232")
 
 To adjust the voltage level of the microcontroller ports for serial communication (from 0V to 5V) it is necessary to use a MAX232 adapter which:
 - Converts ±12V from RS232 into TTL compatible from 0V to 5V
 - Inverts the voltage levels so that 5V is a "logic 1" and 0V is a "logic 0"
 
-![UART](/assets/images/UART.png "UART")
+![ChartUART](/assets/images/ChartUART.png "ChartUART")
 
 ## 5. Power supply of the mobile phone serial port
 
