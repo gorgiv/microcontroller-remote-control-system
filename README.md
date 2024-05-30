@@ -14,7 +14,7 @@ The aim of this project is to:
 - Develop a programming code for the microcontroller
 - Implement AT commands in the code
 - Establish serial communication between the mobile phone and microcontroller
-- Use the proper type of sensors for household conditions monitoring 
+- Utilize proper type of sensors for household conditions monitoring 
 
 ## 1. System components
 
@@ -80,7 +80,7 @@ To adjust the voltage level of the microcontroller ports for serial communicatio
 ## 7. Main features of the system
 
 - On-off control of boiler, heater and irrigation system
-- Maintain the ambient temperature in the home according to the desired temperature
+- Automatic Temperature Control - Maintain the ambient temperature in the home according to the desired temperature
 - Fire alarm - Automatic notification when a critical temperature is exceeded
 - Intruder alarm - Automatic notification when a human presence (home invader) is detected at home where the motion sensor is installed
 - Check the current measured temperature in the home
@@ -91,17 +91,80 @@ To adjust the voltage level of the microcontroller ports for serial communicatio
 
 ## 8. Working principle of the system
 
-- A user sends an SMS message with a specific command to the mobile phone of the system
+- A user sends an SMS message with a specific order to the mobile phone of the system
 - The microcontroller constantly checks if the mobile phone has received an SMS message
-- The microcontroller will read the new message, delete it from the phone's memory and execute the appropriate command
-- Then, the microcontroller in the mobile phone of the system will write an SMS message with a response for the executed command and send it back to the user
-- The microcontroller will also send an SMS message to the administrator to inform him about the phone number of the user who gave the command and its content as well
+- The microcontroller will read the new message, delete it from the phone's memory and execute the appropriate order
+- Then, the microcontroller in the mobile phone of the system will write an SMS message with a response for the executed order and send it back to the user
+- The microcontroller will also send an SMS message to the administrator to inform him about the phone number of the user who gave the order and its content as well
 
-## 9. Schematic diagram in Proteus 8 Professional
+## 9. Handling orders
+
+![TableOfOrders](/assets/images/TableOfOrders.png "TableOfOrders")
+
+### 9.1 Turning ON the Boiler
+
+If a user wishes to turn ON the boiler remotely, he only needs to send an SMS message to the mobile phone of the system with the following content
+
+![SMSUserTurnsOnBoiler](/assets/images/SMSUserTurnsOnBoiler.png "SMSUserTurnsOnBoiler")
+
+After the microcontroller turns ON the boiler successfully, it will respond back via the mobile phone by sending an SMS message to the user with the following content
+
+![SMSPICRespondsTurnedOnBoiler](/assets/images/SMSPICRespondsTurnedOnBoiler.png "SMSPICRespondsTurnedOnBoiler")
+
+Then, the microcontroller will also send a notification SMS message to the administrator with the following content
+
+![SMSPICNotifiesTurnedOnBoiler](/assets/images/SMSPICNotifiesTurnedOnBoiler.png "SMSPICNotifiesTurnedOnBoiler")
+
+### 9.2 Turning OFF the Boiler
+
+If a user wishes to turn OFF the boiler remotely, he only needs to send an SMS message to the mobile phone of the system with the following content
+
+![SMSUserTurnsOffBoiler](/assets/images/SMSUserTurnsOffBoiler.png "SMSUserTurnsOffBoiler")
+
+After the microcontroller turns OFF the boiler successfully, it will respond back via the mobile phone by sending an SMS message to the user with the following content
+
+![SMSPICRespondsTurnedOffBoiler](/assets/images/SMSPICRespondsTurnedOffBoiler.png "SMSPICRespondsTurnedOffBoiler")
+
+Then, the microcontroller will also send a notification SMS message to the administrator with the following content
+
+![SMSPICNotifiesTurnedOffBoiler](/assets/images/SMSPICNotifiesTurnedOffBoiler.png "SMSPICNotifiesTurnedOffBoiler")
+
+### 9.3 Turning ON the Heater and Automatic Temperature Control
+
+The content of the SMS message for turning on the heater and automatically control a certain temperature to be send by user is as follows
+
+![SMSUserTurnsOnHeater](/assets/images/SMSUserTurnsOnHeater.png "SMSUserTurnsOnHeater")
+
+![ChartHeaterATC](/assets/images/ChartHeaterATC.png "ChartHeaterATC")
+
+### 9.4 Automatic notification of fire alarm and intruder alarm
+
+- A fire alarm occurs when the temperature in the room exceeds 50&deg;C
+- When a human presence is detected near the motion sensor, a home intruder alarm is activated
+- Only the administrator can receive an automatic alarm notification via an SMS message with the following content:
+    - Alarm POZAR (Alarm FIRE)
+    - Alarm DVIZENJE (Alarm MOTION)
+
+### 9.5 Conditions monitoring
+
+By sending an SMS message "14MK SOSTOJBI" the user can receive the following information:
+- What is the current temperature in the room?
+- Are following devices turned on/off:
+    - boiler
+    - heater
+    - irrigation system
+- If the heater is turned off, is the automatic temperature control still active?
+- Has an alarm been activated for:
+    - fire
+    - home intruder
+
+![TableConditionsMonitoring](/assets/images/TableConditionsMonitoring.png "TableConditionsMonitoring")
+
+## 10. Schematic diagram in Proteus 8 Professional
 
 ![SchematicDiagram](/assets/images/SchematicDiagram.jpg "SchematicDiagram")
 
-## 10. Source code programming
+## 11. Source code programming
 
 - BASIC programming language with Proton IDE (Integrated Development Environment) is used for development of the [source code](./source/code.bas) for the PIC microcontroller
 - On completion, the machine code file generated by Proton Plus Compiler is loaded into the microcontroller memory using an external Programmer such as ICD2, PICKit2 or "ET-PGMPIC USB" Programmer of ETT
